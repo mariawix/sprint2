@@ -1,0 +1,70 @@
+body {
+  background: #808080;
+  color: #696969;
+}
+.box-shadow {
+  box-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+/*
+ * Page Header
+ */
+.nav-bar-list-item a {
+  color: inherit;
+}
+.nav-bar-list {
+  background: #f5f5f5;
+}
+.nav-bar-list-item {
+  background: inherit;                  /* added because of hover effect (background with opacity) */
+  border-top: 0.1rem solid #45A6FF;
+}
+.nav-bar-list-item:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+@media screen and (min-width: 38rem) {
+  /*
+   * Change style of navigation bar
+   */
+  .nav-bar-container {
+    background: #f5f5f5;
+  }
+  .nav-bar-list-item {
+    border: none;
+  }
+  .nav-bar-list-item:nth-child(n + 2) {
+    border-left: 0.1rem solid #45A6FF;
+  }
+}
+.current-page {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/*
+ * Page Content
+ */
+.page-content {
+  background: #f5f5f5;
+}
+.wrapped-figure {
+  background: #CAE3FA;
+  border: 0.1rem solid #808080;
+}
+.source-site-link {
+  color: black;
+}
+.article-footer {
+  border-top: 0.1rem solid #808080;
+}
+.blog-post {
+  border: 0.1rem solid #000000;
+}
+
+/*
+ * Page Footer
+ */
+.page-footer {
+  background: #f5f5f5;
+}
+.site-github-link {
+  color: #000000;
+}
