@@ -8,6 +8,12 @@
 <body>
 <div class="page">
     <header class="page-header">
+        <div class="search-bar reset-sizing">
+            <form action="http://google.com/search" method="get" class="search-form">
+                <input type="text" name="q" id="google-search-query" class="small-input round-border"/>
+                <button type="submit" class="submit-btn round-border">Search</button>
+            </form>
+        </div>
         <div class="site-logo-wrapper">
             <img src="img/logo.png" alt="chinchilla-coat" class="site-logo">
         </div>
@@ -24,90 +30,81 @@
     </header>
     <main class="page-content box-shadow">
         <h1 class="visuallyhidden">Contact Form</h1>
-        <section>
-            <form action="/my-handling-form-page" method="post" class="contact-form">
-                <h2>Contact Us</h2>
-                <div>
-                    <label for="name-input">
-                        Name:
-                        <input type="text" id="name-input" placeholder="Maria" class="large-input"/>
-                    </label>
-                </div>
-                <div>
-                    <label for="email-input">
-                        E-mail:
-                        <input type="email" id="email-input" placeholder="mariao@wix.com" class="large-input"/>
-                    </label>
-                </div>
-                <div>
-                    <label for="message-input">
-                        Message:
-                        <textarea id="message-input" placeholder="Type text here..." class="large-input"></textarea>
-                    </label>
-                </div>
-                <div>
-                    <label for="language-input">Your language:
-                        <select id="language-input" class="small-input">
-                            <option value="English">English</option>
-                            <option value="Hebrew">Hebrew</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </label>
-                </div>
-                <div>
-                    <label for="browsers-list">Your browser:
-                        <input list="browsers-datalist" id="browsers-list" class="large-input"/>
-                        <datalist id="browsers-datalist">
-                            <option value="Internet Explorer">Internet Explorer</option>
-                            <option value="Firefox">Firefox</option>
-                            <option value="Chrome">Chrome</option>
-                            <option value="Opera">Opera</option>
-                            <option value="Safari">Safari</option>
-                        </datalist>
-                    </label>
-                </div>
-                <div>
-                    <label for="favotite-color-input">
-                        Select your favorite color:
-                        <input type="color" id="favotite-color-input" value="#ff0000" class="large-input"/>
-                    </label>
-                </div>
-                <div>
-                    <label for="birthday-input">
-                        Your birthday:
-                        <input type="date" id="birthday-input" class="large-input"/>
-                    </label>
-                </div>
-                <meter min="0" low="40" high="90" max="100" value="95" class="large-input"></meter>
-                <fieldset class="gender-selector">
-                    <legend>Title</legend>
-                    <label for="female-gender-btn">
-                        Miss
-                        <input type="radio" id="female-gender-btn" name="gender"/>
-                    </label>
-                    <label for="male-gender-btn">
-                        Mister
-                        <input type="radio" id="male-gender-btn" name="gender"/>
-                    </label>
-                </fieldset>
-                <div>
-                    <label for="site-rating-input">
-                        Rate this site
-                        <input type="range" name="points" min="0" max="10" id="site-rating-input" class="large-input"/>
-                    </label>
-                </div>
-                <button type="submit" class="btn-default-style">Send the message</button>
-            </form>
-        </section>
-        <section>
-            <form action="http://google.com/search" method="get" class="search-form">
-                <label for="google-search-query">
-                    Search in Google
-                    <input type="text" name="q" id="google-search-query"/>
+        <form action="/my-handling-form-page" method="post" class="contact-form round-border">
+            <h2>Contact Us</h2>
+            <div>
+                <label for="name-input">
+                    Name:
+                    <input type="text" id="name-input" placeholder="Maria" class="input-area large-input"/>
                 </label>
-                <button type="submit" class="btn-default-style">Search</button>
-            </form>
-        </section>
+            </div>
+            <div>
+                <label for="email-input">
+                    E-mail:
+                    <input type="email" id="email-input" placeholder="mariao@wix.com" class="input-area large-input"/>
+                </label>
+            </div>
+            <div>
+                <label for="message-input">
+                    Message:
+                    <textarea id="message-input" placeholder="Type text here..."
+                              class="input-area large-input"></textarea>
+                </label>
+            </div>
+            <div>
+                <label for="language-input">Your language:
+                    <select id="language-input" class="input-area small-input">
+                        <option value="English">English</option>
+                        <option value="Hebrew">Hebrew</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="browsers-list">Your browser:
+                    <input list="browsers-datalist" id="browsers-list" class="input-area large-input"/>
+                    <datalist id="browsers-datalist">
+                        <option value="Internet Explorer">Internet Explorer</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Chrome">Chrome</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Safari">Safari</option>
+                    </datalist>
+                </label>
+            </div>
+            <div>
+                <label for="favotite-color-input">
+                    Select your favorite color:
+                    <input type="color" id="favotite-color-input" value="#ff0000" class="input-area small-input"/>
+                </label>
+            </div>
+            <div>
+                <label for="birthday-input">
+                    Your birthday:
+                    <input type="date" id="birthday-input" class="input-area large-input"/>
+                </label>
+            </div>
+            <meter min="0" low="40" high="90" max="100" value="95" class="input-area small-input"></meter>
+            <fieldset class="gender-selector">
+                <legend>Title</legend>
+                <label for="female-gender-btn">
+                    Miss
+                    <input type="radio" id="female-gender-btn" name="gender"/>
+                </label>
+                <label for="male-gender-btn">
+                    Mister
+                    <input type="radio" id="male-gender-btn" name="gender"/>
+                </label>
+            </fieldset>
+            <div>
+                <label for="site-rating-input">
+                    Rate this site
+                    <input type="range" name="points" min="0" max="10" id="site-rating-input"
+                           class="input-area large-input"/>
+                </label>
+            </div>
+            <button type="submit" class="submit-btn round-border">Send the message</button>
+        </form>
     </main>
     <footer class="page-footer box-shadow">
         This open sourced site is hosted on

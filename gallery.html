@@ -8,6 +8,12 @@
 <body>
 <div class="page">
     <header class="page-header">
+        <div class="search-bar reset-sizing">
+            <form action="http://google.com/search" method="get" class="search-form">
+                <input type="text" name="q" id="google-search-query" class="small-input round-border"/>
+                <button type="submit" class="submit-btn round-border">Search</button>
+            </form>
+        </div>
         <div class="site-logo-wrapper">
             <img src="img/logo.png" alt="chinchilla-coat" class="site-logo">
         </div>
@@ -24,8 +30,8 @@
     </header>
     <main class="page-content box-shadow">
         <h1 class="visuallyhidden">Gallery</h1>
-        <article>
-            <div class="article-content clearfix">
+        <div class="gallery-wrapper">
+            <div class="clearfix">
                 <ul class="grid-gallery">
                     <li class="grid-gallery-item">
                         <div class="wrapped-figure-container reset-sizing">
@@ -53,13 +59,13 @@
                     </li>
                 </ul>
             </div>
-            <footer class="article-footer">
+            <div class="gallery-footer reset-sizing">
                 Source <span class="source-site-name">Google Images</span>
                 <a class="source-site-link"
                    href="https://www.google.co.il/search?q=chinchilla&amp;espv=2&amp;biw=1440&amp;bih=702&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0CAYQ_AUoAWoVChMIkcPz0paNxgIViNEUCh1wJQAl#tbm=isch&amp;q=chinchillas"
                    title="Chinchillas">Chinchillas</a>
-            </footer>
-        </article>
+            </div>
+        </div>
     </main>
     <footer class="page-footer box-shadow">
         This open sourced site is hosted on

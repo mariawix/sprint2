@@ -15,10 +15,14 @@ body {
     padding: 0;
     box-size: 0;
 }
+.round-border {
+    border-radius: 0.1rem;
+}
 /*
  * Page Header
  */
 .page-header {
+    margin-top: 5rem;
     margin-bottom: 2rem;
 }
 .nav-bar-list {
@@ -29,8 +33,7 @@ body {
 .nav-bar-list-item {
     list-style-type: none;
     margin: 0 auto;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0; /* top-bottom right-left*/
 }
 .nav-bar-list-item:hover {
     cursor: pointer;
@@ -43,7 +46,20 @@ body {
     max-width: 124px;
     margin: 0 auto;
 }
-@media screen and (min-width: 38rem) {
+/* Search Bar */
+.search-bar {
+    text-align: right;
+    padding-right: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.search-form {
+    width: 100%;
+}
+
+@media screen and (min-width: 30rem) {
     /*
      * Change style of top menu
      */
@@ -74,7 +90,8 @@ body {
     border-radius: 0.3rem;
     padding: 0.1rem;
 }
-.article-footer {
+.article-footer,
+.gallery-footer {
     padding-top: 0.3rem;
     width: 100%;
     display: block;
@@ -101,7 +118,6 @@ body {
 .blog-post {
     margin-bottom: 1rem;
     padding: 0.3rem;
-    border-radius: 0.2rem;
 }
 .blog-post-header,
 .section-header {
@@ -121,43 +137,40 @@ body {
 }
 
 /*
- * Forms
+ * Forms and Buttons
  */
-.large-input {
+.input-area {
     display: block;
-    width: 80%;
-    margin: 0.1rem 0 0.2rem 0;
+    margin: 0.1rem 0 0.2rem; /* top right-left bottom */
     padding: 0.1rem;
     position: relative;
     left: 1.5rem;
+    box-sizing: border-box;
+}
+.large-input {
+    width: 80%;
+    max-width: 400px;
 }
 .small-input {
-    display: block;
     width: 50%;
-    margin: 0.1rem 0 0.2rem 0;
-    padding: 0.1rem;
-    position: relative;
-    left: 1.5rem;
+    max-width: 200px;
+
 }
 .gender-selector {
     border: none;
     margin-left: -0.5rem;
 }
 
-.btn-default-style {
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 0.2rem;
+.submit-btn {
+    padding: 0.2rem 0.6rem; /* top-bottom right-left*/
+    margin: 0.3rem 0.1rem;
 }
 .gender-selector label {
     margin-left: 1.5rem;
 }
 .contact-form {
     margin-bottom: 1rem;
-    border-style: solid;
-    border-width: 0.05rem;
     padding: 0.5rem;
-    border-radius: 0.2rem;
 }
 
 /*

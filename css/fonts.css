@@ -11,31 +11,30 @@ body {
 }
 .nav-bar-list-item a {
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
 }
 
 /*
  * Page Content
  */
 .page-content h1 {
-    font-size: 1.08rem;
+    font-size: 0.8rem;
 }
 .page-content h2 {
-    font-size: 1.07rem;
+    font-size: 0.75rem;
 }
 .page-content h3 {
-     font-size: 1.06rem;
+     font-size: 0.7rem;
 }
 .wrapped-figure {
     text-align: center;
 }
 .paragraph-intro,
 .current-page,
-.works-list-term
-{
+.works-list-term {
     font-weight: bold;
 }
-@media screen and (min-width: 38rem) {
+@media screen and (min-width: 30rem) {
     .nav-bar-list {
         font-size: 0;
     }
@@ -45,6 +44,6 @@ body {
  * Page Footer
  */
 .page-footer {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
