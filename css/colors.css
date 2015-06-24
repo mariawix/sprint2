@@ -9,7 +9,7 @@ body {
   box-shadow: 0.1rem 0.1rem 0.8rem black;
 }
 .round-border {
-  border: 0.05rem solid #000000;
+  border: 0.1rem solid #000000;
 }
 .transparent-bg {
   background-color: rgba(0,0,0,0.2) !important;
@@ -39,7 +39,14 @@ body {
   background: inherit;                  /* added because of hover effect (background with opacity) */
   border-top: 0.1rem solid #45A6FF;
 }
-@media screen and (min-width: 30rem) {
+.social-side-bar-list {
+  background: rgba(255,255,255,0.3);
+}
+.side-bar-item-description {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+@media screen and (min-width: 44rem) {
   /*
    * Change style of navigation bar
    */
