@@ -1,6 +1,6 @@
-/*
+/**************************************************************************************************
  * General
- */
+ **************************************************************************************************/
 body {
   background: #808080;
   color: #696969;
@@ -21,49 +21,49 @@ body {
   background-color: #CAE3FA;
   color: #808080;
 }
-.input-area,
-.submit-btn {
+.input-area {
   color: #808080;
 }
 
-/*
+/**************************************************************************************************
  * Page Header
- */
-.nav-bar-list-item a {
-  color: inherit;
-}
-.nav-bar-list {
-  background: #f5f5f5;
-}
-.nav-bar-list-item {
-  background: inherit;                  /* added because of hover effect (background with opacity) */
-  border-top: 0.1rem solid #45A6FF;
+ **************************************************************************************************/
+@media screen and (min-width: 44rem) {
+  .nav-bars-container {
+    background: #f5f5f5;
+  }
 }
 .social-side-bar-list {
   background: rgba(255,255,255,0.3);
 }
-.side-bar-item-description {
+.social-side-bar-item-description {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
+/*
+ * Main Menu
+ */
+.main-menu-item a {
+  color: inherit;
+}
+.main-menu {
+  background: #f5f5f5;
+}
+.main-menu-item {
+  background: inherit;                  /* added because of hover effect (background with opacity) */
+  border-top: 0.1rem solid #45A6FF;
+}
 @media screen and (min-width: 44rem) {
-  /*
-   * Change style of navigation bar
-   */
-  .nav-bar-container {
-    background: #f5f5f5;
-  }
-  .nav-bar-list-item {
+  .main-menu-item {
     border: none;
   }
-  .nav-bar-list-item:nth-child(n + 2) {
+  .main-menu-item:nth-child(n + 2) {
     border-left: 0.1rem solid #45A6FF;
   }
 }
-
-/*
+/**************************************************************************************************
  * Page Content
- */
+ **************************************************************************************************/
 .page-content {
   background: #f5f5f5;
 }
@@ -83,10 +83,9 @@ body {
 .article-footer {
   border-top: 0.1rem solid #808080;
 }
-
-/*
+/**************************************************************************************************
  * Page Footer
- */
+ **************************************************************************************************/
 .page-footer {
   background: #f5f5f5;
 }

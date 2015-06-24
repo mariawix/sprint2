@@ -1,6 +1,6 @@
-/*
+/**************************************************************************************************
  * General
- */
+ **************************************************************************************************/
 body {
     font-size: 100%;
     font-family: "Bell MT", "Georgia", serif;
@@ -10,26 +10,33 @@ body {
     font-size: 1rem;
     font-family: inherit;
 }
-
-/*
+/**************************************************************************************************
  * Page Header
- */
-.nav-bar-list {
-    text-align: center;
-}
-.nav-bar-list-item a {
-    text-decoration: none;
-    font-size: 1.3rem;
-}
+ **************************************************************************************************/
 .search-bar {
     text-align: right;
 }
-.side-bar-item-description {
+.social-side-bar-item-description {
     text-align: center;
 }
 /*
- * Page Content
+ * Main Menu
  */
+.main-menu {
+    text-align: center;
+}
+.main-menu-item a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+@media screen and (min-width: 30rem) {
+    .main-menu {
+        font-size: 0;
+    }
+}
+/**************************************************************************************************
+ * Page Content
+ **************************************************************************************************/
 .page-content h1 {
     font-size: 1.3rem;
 }
@@ -39,28 +46,22 @@ body {
 .page-content h3 {
      font-size: 1.1rem;
 }
-.wrapped-figure {
-    text-align: center;
-}
 .paragraph-intro,
 .current-page,
 .works-list-term {
     font-weight: bold;
 }
-@media screen and (min-width: 30rem) {
-    .nav-bar-list {
-        font-size: 0;
-    }
+.wrapped-figure {
+    text-align: center;
 }
 @media screen and (max-width: 36rem) {
     .wrapped-figure-container {
         text-align: center;
     }
 }
-/*
+/**************************************************************************************************
  * Page Footer
- */
+ **************************************************************************************************/
 .page-footer {
     font-size: 1.1rem;
 }
-
