@@ -8,7 +8,7 @@ body {
     width: 90%;
     margin: 2rem auto;
 }
-.clearfix:after {
+.clearfix::after {
     display: block;
     content: "";
     clear: both;
@@ -203,7 +203,6 @@ body {
 .rollover-img {
     position: relative;
 }
-
 .rollover-img-bottom {
     position: absolute;
     top: 0;
