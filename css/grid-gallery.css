@@ -1,13 +1,6 @@
 /*************************************************************************************************
  * Grid Gallery
  *************************************************************************************************/
-.grid-gallery-transition {
-    -webkit-transition: all 1.2s ease-in-out;
-    -moz-transition: all 1.2s ease-in-out;
-    -ms-transition: all 1.2s ease-in-out;
-    -o-transition: all 1.2s ease-in-out;
-    transition: all 1.2s ease-in-out;
-}
 .grid-gallery {
     list-style-type: none;
     text-align: center;
@@ -20,7 +13,7 @@
     margin-bottom: 0.7rem;
 }
 .grid-gallery-figure {
-    cursor: help;
+    cursor: pointer;
     position: relative;
     font-size: 0;
     margin: 0.4rem 0.5rem;  /* top-bottom right-left */
@@ -41,6 +34,7 @@
     color: #ffffff;
     bottom: 0;
     left: 0;
+    transition: all 1.2s ease-in-out;
 }
 .grid-gallery-figure-title-skin {
     position: absolute;
@@ -50,6 +44,7 @@
     bottom: 0;
     left: 0;
     opacity: 0;
+    transition: all 1.2s ease-in-out;
 }
 .grid-gallery-figure-title-skin:hover {
     opacity: 1;
