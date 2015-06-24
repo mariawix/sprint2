@@ -1,6 +1,14 @@
+/*
+ * General
+ */
 body {
     font-size: 62.5%;
     font-family: "Bell MT", "Georgia", serif;
+}
+.input-area,
+.submit-btn {
+    font-size: 0.6rem;
+    font-family: inherit;
 }
 
 /*
@@ -39,7 +47,6 @@ body {
         font-size: 0;
     }
 }
-
 /*
  * Page Footer
  */

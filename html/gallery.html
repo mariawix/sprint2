@@ -8,57 +8,55 @@
 <body>
 <div class="page">
     <header class="page-header">
-        <div class="search-bar reset-sizing">
-            <form action="http://google.com/search" method="get" class="search-form">
-                <input type="text" name="q" id="google-search-query" class="small-input round-border"/>
-                <button type="submit" class="submit-btn round-border">Search</button>
-            </form>
-        </div>
         <div class="site-logo-wrapper">
             <img src="../img/logo.png" alt="chinchilla-coat" class="site-logo">
         </div>
         <nav class="nav-bar-container box-shadow">
+            <div class="search-bar transparent-bg reset-sizing">
+                <form action="http://google.com/search" method="get" class="search-form">
+                    <input type="text" name="q" id="google-search-query" class="small-input round-border"/>
+                    <button type="submit" class="submit-btn transparent-bg-on-hover round-border">Search</button>
+                </form>
+            </div>
             <ul class="nav-bar-list">
-                <li class="nav-bar-list-item"><a href="../index.html">Home</a></li>
-                <li class="nav-bar-list-item"><a href="about.html">About</a></li>
-                <li class="nav-bar-list-item current-page"><a href="gallery.html">Gallery</a></li>
-                <li class="nav-bar-list-item"><a href="work.html">Work</a></li>
-                <li class="nav-bar-list-item"><a href="blog.html">Blog</a></li>
-                <li class="nav-bar-list-item"><a href="form.html">Contact Form</a></li>
+                <li class="nav-bar-list-item transparent-bg-on-hover"><a href="../index.html">Home</a></li>
+                <li class="nav-bar-list-item transparent-bg-on-hover"><a href="about.html">About</a></li>
+                <li class="nav-bar-list-item transparent-bg current-page"><a href="gallery.html">Gallery</a></li>
+                <li class="nav-bar-list-item transparent-bg-on-hover"><a href="work.html">Work</a></li>
+                <li class="nav-bar-list-item transparent-bg-on-hover"><a href="blog.html">Blog</a></li>
+                <li class="nav-bar-list-item transparent-bg-on-hover"><a href="form.html">Contact Form</a></li>
             </ul>
         </nav>
     </header>
     <main class="page-content box-shadow">
         <h1 class="visuallyhidden">Gallery</h1>
-        <div class="gallery-wrapper">
-            <div class="clearfix">
-                <ul class="grid-gallery">
-                    <li class="grid-gallery-item">
-                        <div class="wrapped-figure-container reset-sizing">
-                            <figure class="wrapped-figure grid-gallery-figure">
-                                <img src="../img/a-chin.jpg" alt="A chin">
-                                <figcaption>A chin</figcaption>
-                            </figure>
-                        </div>
-                    </li>
-                    <li class="grid-gallery-item">
-                        <div class="wrapped-figure-container reset-sizing">
-                            <figure class="wrapped-figure grid-gallery-figure">
-                                <img src="../img/chinchilla-eating.jpg" alt="Chinchilla eating">
-                                <figcaption>Chinchilla eating</figcaption>
-                            </figure>
-                        </div>
-                    </li>
-                    <li class="grid-gallery-item">
-                        <div class="wrapped-figure-container reset-sizing">
-                            <figure class="wrapped-figure grid-gallery-figure">
-                                <img src="../img/nancy-and-sid.jpg" alt="Nancy and Sid">
-                                <figcaption>Nancy and Sid</figcaption>
-                            </figure>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div clas="reset-sizing grid-gallery-wrapper">
+            <ul class="grid-gallery reset-sizing">
+                <li class="grid-gallery-item">
+                    <figure class="grid-gallery-figure">
+                        <img src="../img/a-chin.jpg" alt="A chin" class="grid-gallery-figure-content grid-gallery-transition">
+                        <span class="grid-gallery-figure-title-skin grid-gallery-transition">
+                            <figcaption class="grid-gallery-figure-title">A chin</figcaption>
+                        </span>
+                    </figure>
+                </li>
+                <li class="grid-gallery-item">
+                    <figure class="grid-gallery-figure">
+                        <img src="../img/chinchilla-eating.jpg" alt="Chinchilla eating" class="grid-gallery-figure-content grid-gallery-transition">
+                        <span class="grid-gallery-figure-title-skin grid-gallery-transition">
+                            <figcaption class="grid-gallery-figure-title">Chinchilla eating</figcaption>
+                        </span>
+                    </figure>
+                </li>
+                <li class="grid-gallery-item">
+                    <figure class="grid-gallery-figure">
+                        <img src="../img/nancy-and-sid.jpg" alt="Nancy and Sid" class="grid-gallery-figure-content grid-gallery-transition">
+                        <span class="grid-gallery-figure-title-skin grid-gallery-transition">
+                            <figcaption class="grid-gallery-figure-title">Nancy and Sid</figcaption>
+                        </span>
+                    </figure>
+                </li>
+            </ul>
             <div class="gallery-footer reset-sizing">
                 Source <span class="source-site-name">Google Images</span>
                 <a class="source-site-link"

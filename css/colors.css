@@ -1,3 +1,6 @@
+/*
+ * General
+ */
 body {
   background: #808080;
   color: #696969;
@@ -8,6 +11,21 @@ body {
 .round-border {
   border: 0.05rem solid #000000;
 }
+.transparent-bg {
+  background-color: rgba(0,0,0,0.2) !important;
+}
+.transparent-bg-on-hover:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+.submit-btn {
+  background-color: #CAE3FA;
+  color: #808080;
+}
+.input-area,
+.submit-btn {
+  color: #808080;
+}
+
 /*
  * Page Header
  */
@@ -20,12 +38,6 @@ body {
 .nav-bar-list-item {
   background: inherit;                  /* added because of hover effect (background with opacity) */
   border-top: 0.1rem solid #45A6FF;
-}
-.nav-bar-list-item:hover {
-  background-color: rgba(0,0,0,0.2);
-}
-.search-bar {
-  background-color: rgba(0,0,0,0.2);
 }
 @media screen and (min-width: 30rem) {
   /*
@@ -40,9 +52,6 @@ body {
   .nav-bar-list-item:nth-child(n + 2) {
     border-left: 0.1rem solid #45A6FF;
   }
-}
-.current-page {
-  background-color: rgba(0,0,0,0.2);
 }
 
 /*
@@ -64,14 +73,10 @@ body {
 .source-site-link {
   color: black;
 }
-.article-footer,
-.gallery-footer {
+.article-footer {
   border-top: 0.1rem solid #808080;
 }
-.submit-btn {
-  background-color: #CAE3FA;
-  color: #808080;
-}
+
 /*
  * Page Footer
  */
