@@ -191,6 +191,7 @@ body {
  * Rollover
  */
 .rollover-img {
+    cursor: pointer;
     position: relative;
 }
 .rollover-img-bottom {
