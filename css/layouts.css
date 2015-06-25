@@ -187,12 +187,6 @@ body {
         margin: 0 auto;
     }
 }
-.works-list-term {
-    margin-bottom: 0.5rem;
-}
-.works-list-definition {
-    margin-bottom: 1rem;
-}
 /*
  * Rollover
  */
@@ -217,6 +211,12 @@ body {
     opacity: 0;
 }
 
+.works-list-term {
+    margin-bottom: 0.5rem;
+}
+.works-list-definition {
+    margin-bottom: 1rem;
+}
 .blog-post {
     margin-bottom: 1rem;
     padding: 0.3rem;
