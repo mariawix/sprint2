@@ -141,7 +141,9 @@ body {
  */
 @media screen and (min-width: 44rem) {
     .site-logo {
-        height: 2.35rem;
+        height: 2.45rem;
+    }
+    .site-logo-wrapper {
         float: left;
     }
 }
