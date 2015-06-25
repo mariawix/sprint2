@@ -26,10 +26,12 @@ body {
  */
 .rotate-transition {
     cursor: pointer;
+    -webkit-transition: all 1.5s cubic-bezier(.69,.05,.92,.6);
     transition: all 1.5s cubic-bezier(.69,.05,.92,.6);
 }
 .rotate-transition:hover {
     border-radius: 50%;
+    -webkit-transform: rotate(3600deg);
     transform: rotate(3600deg);
 }
 /*
@@ -130,7 +132,9 @@ body {
      opacity: 0;
  }
 .social-side-bar-list-item:hover .social-side-bar-item-description {
+    -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
+    -webkit-transform: translateX(-3rem) translateY(0.35rem);
     transform: translateX(-3rem) translateY(0.35rem);
     border-bottom-left-radius: 2rem;
     border-top-right-radius: 2rem;
