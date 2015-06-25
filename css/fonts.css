@@ -34,6 +34,12 @@ body {
         font-size: 0;
     }
 }
+/*
+ * Site Logo
+ */
+.site-logo-wrapper {
+    text-align: center;
+}
 /**************************************************************************************************
  * Page Content
  **************************************************************************************************/
@@ -44,7 +50,7 @@ body {
     font-size: 1.2rem;
 }
 .page-content h3 {
-     font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 .paragraph-intro,
 .current-page,

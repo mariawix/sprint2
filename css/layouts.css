@@ -79,9 +79,6 @@ body {
 .main-menu-item:hover {
     cursor: pointer;
 }
-.main-menu-item a {
-    display: block;
-}
 @media screen and (min-width: 44rem) {
     .main-menu-item {
         padding: 0.5rem;
@@ -93,7 +90,6 @@ body {
  * Search Bar
  */
 .search-bar {
-    padding-right: 1rem;
     position: fixed;
     top: 0;
     right: 0;
@@ -101,7 +97,7 @@ body {
     border-bottom-left-radius: 0.3rem;
 }
 .search-form {
-    width: 100%;
+    margin: 0 auto;
 }
 /*
  * Social Side Bar
@@ -113,6 +109,7 @@ body {
     padding: 1rem 0.2rem;
     border-bottom-left-radius: 1.8rem;
     border-top-left-radius: 1.8rem;
+    z-index: 1;
 }
 .social-side-bar-list-item {
     list-style-type: none;
@@ -127,10 +124,7 @@ body {
 }
 .social-side-bar-item-description {
      position: absolute;
-     width: 10rem;
-     display: block;
-     text-align: center;
-     padding: 5%;
+     padding: 0.2rem 2rem;
      right: 0;
      top: 0;
      opacity: 0;
@@ -138,17 +132,13 @@ body {
 .social-side-bar-list-item:hover .social-side-bar-item-description {
     transition: all 0.5s linear;
     transform: translateX(-3rem) translateY(0.35rem);
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
     opacity: 1;
 }
 /*
  * Site Logo
  */
-.site-logo {
-    display: block;
-    margin: 0 auto;
-}
 @media screen and (min-width: 44rem) {
     .site-logo {
         height: 2.35rem;
@@ -228,7 +218,6 @@ body {
 .article-footer {
     padding-top: 0.3rem;
     width: 100%;
-    display: block;
 }
 /*
  * Contact Form
